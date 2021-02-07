@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+   <body>
+
+      <!-- <h1>WordCloud For Positive Tweets</h1> -->
+
+      <h1>{{ name }}</h1>
+      <p>As of now we have only one type of column further treatment which is date type we will convert date of type string into Month year and day and date format should be dd.MM.yyyy </p>
+      <!-- <a href="/misingValueHeatMap"><button>Missing Value Visualization</button></a><br> -->
+      <form method="POST" action="/conversion">
+         <select name= x_column >
+            {% for column in columns %}
+            <option value= "{{column}}" SELECTED>{{column}}</option>
+            {% endfor %}
+        </select>
+        <!-- <input type="text" name="column" class="form-control"  placeholder="Enter Column" style="max-width: 300px;" autofocus required> -->
+        <button type="submit" class="btn btn-default">Convert</button>
+      </form>
+      <a href="/redirect"><button>Back</button></a><br>
+      <!-- <p>
+      <center>
+      <img src='/correlationHeatMap/' alt ="Correlation Heatmap Visualization" height="400" width="1200">
+      </center>
+      </p> -->
+
+
+      <!-- <img src={{url}} alt="Chart" height="740" width="740"> -->
+
+   </body>
+</html>

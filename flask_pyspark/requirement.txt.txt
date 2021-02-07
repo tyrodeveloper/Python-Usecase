@@ -1,0 +1,4 @@
+Python 3.7.3
+Flask 1.1.1
+Werkzeug 0.15.4
+spark 2.4.4

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+   <body>
+
+      <!-- <h1>WordCloud For Positive Tweets</h1> -->
+
+      <h1>{{ name }}</h1>
+      <p> Here you can perform data Distribution x column should be categorical  y should be integer</p>
+      <!-- <a href="/misingValueHeatMap"><button>Missing Value Visualization</button></a><br> -->
+      <form method="POST" action="/outlierPlot">
+         <select name= x_column >
+            {% for column in columns %}
+            <option value= "{{column}}" SELECTED>{{column}}</option>"
+            {% endfor %}
+        </select>
+        <select name= y_column >
+         {% for column in columns %}
+         <option value= "{{column}}" SELECTED>{{column}}</option>"
+         {% endfor %}
+         </select>
+        <!-- <input type="text" name="column1" class="form-control"  placeholder="Enter Column" style="max-width: 300px;" autofocus required>
+        <input type="text" name="column2" class="form-control"  placeholder="Enter Column" style="max-width: 300px;" autofocus required> -->
+        
+        <button type="submit" class="btn btn-default">Plot</button>
+      </form>
+      <!-- <p>
+      <center>
+      <img src='/correlationHeatMap/' alt ="Correlation Heatmap Visualization" height="400" width="1200">
+      </center>
+      </p> -->
+
+
+      <!-- <img src={{url}} alt="Chart" height="740" width="740"> -->
+
+   </body>
+</html>

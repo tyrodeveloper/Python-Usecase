@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+   <body>
+
+      <!-- <h1>WordCloud For Positive Tweets</h1> -->
+      <h1>{{name}}</h1>
+      {% for table in tables %}
+            {{titles[loop.index]}}
+            {{ table|safe }}
+      {% endfor %}
+
+      <br>
+      
+      <!-- <img src={{url}} alt="Chart" height="740" width="740"> -->
+      <a href="/redirect"><button>Back</button></a><br>
+   </body>
+</html>
